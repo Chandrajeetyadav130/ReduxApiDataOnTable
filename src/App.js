@@ -1,24 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Post from './Post';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+            <div className=" card container-fluid container-sm container-md" style={{border:"1px light black" ,marginTop:"20px",marginBottom:"20px"}}>
+
+    <h5 style={{textAlign:"center",marginTop:"1rem"}}>Display all Data of Api using Redux</h5>
+   <Post/>
+   </div>
+    </>
   );
 }
 
